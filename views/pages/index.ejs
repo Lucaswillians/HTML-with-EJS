@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head'); %>
+<body>
+    <%- include('../partials/header'); %>
+    <main>
+        <div>
+            <h1>Node com EJS</h1>
+            <p>Vamos aprender o EJS</p>
+        </div>
+        <ul>
+            <% qualitys.forEach(function(quality){ %>
+                <li>
+                    <strong><%= quality.title %></strong> <%= quality.message %> <!-- o = é usado quando quero mostrar algo dentro da variavel-->
+                </li>
+           <% })%>
+            
+        </ul>
+
+    </main>
+    <%- include('../partials/footer'); %>
+</body>
+</html>
